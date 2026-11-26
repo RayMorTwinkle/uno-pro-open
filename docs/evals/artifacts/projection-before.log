@@ -1,0 +1,36 @@
+
+ RUN  v2.1.9 /private/var/folders/m8/tgs61s_x64bf2rs9w1_q8w8w0000gn/T/tmp.UxMO9ePItZ/packages/shared
+
+ ✓ tests/projection.test.ts > UNO draw visibility > keeps the playable drawn card in its owner’s hand and view
+ × tests/projection.test.ts > UNO draw visibility > sends only public draw information to the opponent
+   → expected false to be true // Object.is equality
+ × tests/projection.test.ts > UNO draw visibility > sends only public draw information to the spectator
+   → expected false to be true // Object.is equality
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/projection.test.ts > UNO draw visibility > sends only public draw information to the opponent
+ FAIL  tests/projection.test.ts > UNO draw visibility > sends only public draw information to the spectator
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ tests/projection.test.ts:42:96
+     40|       const { game, seat } = playableDraw();
+     41|       const view = game.gameView(viewer === 'spectator' ? -1 : (seat +…
+     42|       expect(view.drewThisTurn == null && (view.lastEvent as GameEvent…
+       |                                                                                                ^
+     43|       expect(view.lastEvent).toMatchObject({ type: 'draw', seat });
+     44|       expect((game.gameView(seat).lastEvent as GameEvent).cardIds).toH…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ Test Files  1 failed (1)
+      Tests  2 failed | 1 passed (3)
+   Start at  21:09:41
+   Duration  446ms (transform 88ms, setup 0ms, collect 92ms, tests 6ms, environment 0ms, prepare 72ms)
+

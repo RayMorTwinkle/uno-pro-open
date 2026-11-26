@@ -1,0 +1,36 @@
+
+> uno-pro@0.1.0 test
+> npm run test --workspaces --if-present && node --import tsx --test scripts/play-controls.test.mjs
+
+
+> @uno-pro/shared@0.1.0 test
+> vitest run
+
+
+ RUN  v2.1.9 /private/tmp/refactor-1126-b3/uno-pro/packages/shared
+
+ ✓ tests/projection.test.ts (3 tests) 7ms
+ ✓ tests/galli.test.ts (7 tests) 5ms
+ ✓ tests/drawguess.test.ts (5 tests) 8ms
+ ✓ tests/nimmt.test.ts (12 tests) 11ms
+ ✓ tests/cheat.test.ts (13 tests) 18ms
+ ✓ tests/engine.test.ts (28 tests) 14ms
+ ✓ tests/ranked-seats.test.ts (16 tests) 7ms
+
+ Test Files  7 passed (7)
+      Tests  84 passed (84)
+   Start at  21:18:43
+   Duration  884ms (transform 820ms, setup 0ms, collect 2.00s, tests 69ms, environment 1ms, prepare 915ms)
+
+✔ 抢出区分同数字与完全相同的牌，关闭时保留原先的等待流程 (0.836ms)
+✔ 连打保留选择的首牌与剩余顺序，单张及功能牌保留原入口 (0.101958ms)
+✔ 质疑窗口中的交互选项与引擎接牌接口一致 (1.770917ms)
+✔ 点击候选转换成 game:play 的牌 ID 后，引擎实际执行抢出与同数字连打 (0.300334ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 249.562833

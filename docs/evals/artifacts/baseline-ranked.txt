@@ -1,0 +1,249 @@
+
+ RUN  v2.1.9 /private/var/folders/m8/tgs61s_x64bf2rs9w1_q8w8w0000gn/T/tmp.9ML6vDxSD5/packages/shared
+
+ × tests/ranked-seats.test.ts > 排名赛的在场座位 > 三人桌末张反转，逆序交给仍在场的人
+   → expected 1 to be 6 // Object.is equality
+ ✓ tests/ranked-seats.test.ts > 排名赛的在场座位 > 已有人出完，留下的两人打反转依旧可再行动
+ × tests/ranked-seats.test.ts > 排名赛的在场座位 > 按方向 1 轮转时，已出完的人保持空手
+   → expected [ [ 21, 22 ], [], [ 11, 12 ] ] to deeply equal [ [], [ 21, 22 ], [ 11, 12 ] ]
+ × tests/ranked-seats.test.ts > 排名赛的在场座位 > 按方向 -1 轮转时，已出完的人保持空手
+   → expected [ [ 11, 12 ], [ 21, 22 ], [] ] to deeply equal [ [], [ 21, 22 ], [ 11, 12 ] ]
+ × tests/ranked-seats.test.ts > 排名赛的在场座位 > 末张 7 先取得名次，下一位继续出牌
+   → expected [ 'swap_target', 1 ] to deeply equal [ 'play', 3 ]
+ × tests/ranked-seats.test.ts > 排名赛的在场座位 > 末张万能牌仍可分两步选色，交棒前保留上一张万能指定的颜色
+   → expected [ 'choose_color', 1, 'red' ] to deeply equal [ 'choose_color', 1, 'green' ]
+ ✓ tests/ranked-seats.test.ts > 排名赛的在场座位 > 末张 +4 选色后把质疑权交给下家
+ × tests/ranked-seats.test.ts > 排名赛的在场座位 > 上张万能从红改绿，合法 +4 分步选色后的质疑仍按绿判罚
+   → expected 'challenge_win' to be 'challenge_lose' // Object.is equality
+ × tests/ranked-seats.test.ts > 排名赛的在场座位 > 换手拒绝 self 目标且保留选择窗口
+   → expected true to be false // Object.is equality
+ × tests/ranked-seats.test.ts > 排名赛的在场座位 > 换手拒绝 ranked 目标且保留选择窗口
+   → expected true to be false // Object.is equality
+ × tests/ranked-seats.test.ts > 排名赛的在场座位 > 换手拒绝 eliminated 目标且保留选择窗口
+   → expected true to be false // Object.is equality
+ × tests/ranked-seats.test.ts > 排名赛的在场座位 > novice 只从仍在场的其他玩家中选择换手对象
+   → expected { type: 'swap_target', targetSeat: 3 } to deeply equal { type: 'swap_target', targetSeat: 6 }
+ × tests/ranked-seats.test.ts > 排名赛的在场座位 > easy 只从仍在场的其他玩家中选择换手对象
+   → expected { type: 'swap_target', targetSeat: 3 } to deeply equal { type: 'swap_target', targetSeat: 6 }
+ × tests/ranked-seats.test.ts > 排名赛的在场座位 > normal 只从仍在场的其他玩家中选择换手对象
+   → expected { type: 'swap_target', targetSeat: 3 } to deeply equal { type: 'swap_target', targetSeat: 6 }
+ × tests/ranked-seats.test.ts > 排名赛的在场座位 > hard 只从仍在场的其他玩家中选择换手对象
+   → expected { type: 'swap_target', targetSeat: 3 } to deeply equal { type: 'swap_target', targetSeat: 6 }
+ × tests/ranked-seats.test.ts > 排名赛的在场座位 > 新一轮从仍在场的首位玩家开始，清除上一轮名次
+   → expected 1 to be 3 // Object.is equality
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 14 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/ranked-seats.test.ts > 排名赛的在场座位 > 三人桌末张反转，逆序交给仍在场的人
+AssertionError: expected 1 to be 6 // Object.is equality
+
+- Expected
++ Received
+
+- 6
++ 1
+
+ ❯ tests/ranked-seats.test.ts:30:29
+     28|     expect(g.state.finishOrder).toEqual([1]);
+     29|     expect(g.state.direction).toBe(-1);
+     30|     expect(g.state.current).toBe(6);
+       |                             ^
+     31|   });
+     32| 
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/14]⎯
+
+ FAIL  tests/ranked-seats.test.ts > 排名赛的在场座位 > 按方向 1 轮转时，已出完的人保持空手
+AssertionError: expected [ [ 21, 22 ], [], [ 11, 12 ] ] to deeply equal [ [], [ 21, 22 ], [ 11, 12 ] ]
+
+- Expected
++ Received
+
+  Array [
+-   Array [],
+    Array [
+      21,
+      22,
+    ],
++   Array [],
+    Array [
+      11,
+      12,
+    ],
+  ]
+
+ ❯ tests/ranked-seats.test.ts:51:60
+     49|     g.state.hands[1].cards.push(number(31, 0));
+     50|     expect(g.play(3, [31]).ok).toBe(true);
+     51|     expect(g.state.hands.map(h => h.cards.map(c => c.id))).toEqual([[]…
+       |                                                            ^
+     52|     expect(g.state.current).toBe(6);
+     53|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/14]⎯
+
+ FAIL  tests/ranked-seats.test.ts > 排名赛的在场座位 > 按方向 -1 轮转时，已出完的人保持空手
+AssertionError: expected [ [ 11, 12 ], [ 21, 22 ], [] ] to deeply equal [ [], [ 21, 22 ], [ 11, 12 ] ]
+
+- Expected
++ Received
+
+  Array [
+-   Array [],
+-   Array [
+-     21,
+-     22,
+-   ],
+    Array [
+      11,
+      12,
++   ],
++   Array [
++     21,
++     22,
+    ],
++   Array [],
+  ]
+
+ ❯ tests/ranked-seats.test.ts:51:60
+     49|     g.state.hands[1].cards.push(number(31, 0));
+     50|     expect(g.play(3, [31]).ok).toBe(true);
+     51|     expect(g.state.hands.map(h => h.cards.map(c => c.id))).toEqual([[]…
+       |                                                            ^
+     52|     expect(g.state.current).toBe(6);
+     53|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/14]⎯
+
+ FAIL  tests/ranked-seats.test.ts > 排名赛的在场座位 > 末张 7 先取得名次，下一位继续出牌
+AssertionError: expected [ 'swap_target', 1 ] to deeply equal [ 'play', 3 ]
+
+- Expected
++ Received
+
+  Array [
+-   "play",
+-   3,
++   "swap_target",
++   1,
+  ]
+
+ ❯ tests/ranked-seats.test.ts:60:46
+     58|     expect(g.play(1, [31]).ok).toBe(true);
+     59|     expect(g.state.finishOrder).toEqual([1]);
+     60|     expect([g.state.phase, g.state.current]).toEqual(['play', 3]);
+       |                                              ^
+     61|   });
+     62| 
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/14]⎯
+
+ FAIL  tests/ranked-seats.test.ts > 排名赛的在场座位 > 末张万能牌仍可分两步选色，交棒前保留上一张万能指定的颜色
+AssertionError: expected [ 'choose_color', 1, 'red' ] to deeply equal [ 'choose_color', 1, 'green' ]
+
+- Expected
++ Received
+
+  Array [
+    "choose_color",
+    1,
+-   "green",
++   "red",
+  ]
+
+ ❯ tests/ranked-seats.test.ts:69:67
+     67|     g.state.hands[0].cards = [{ id: 46, kind: 'wild', color: null }];
+     68|     expect(g.play(1, [46]).ok).toBe(true);
+     69|     expect([g.state.phase, g.state.current, g.state.activeColor]).toEq…
+       |                                                                   ^
+     70|     expect(g.chooseColor(1, 'yellow').ok).toBe(true);
+     71|     expect([g.state.phase, g.state.current, g.state.activeColor]).toEq…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/14]⎯
+
+ FAIL  tests/ranked-seats.test.ts > 排名赛的在场座位 > 上张万能从红改绿，合法 +4 分步选色后的质疑仍按绿判罚
+AssertionError: expected 'challenge_win' to be 'challenge_lose' // Object.is equality
+
+Expected: "challenge_lose"
+Received: "challenge_win"
+
+ ❯ tests/ranked-seats.test.ts:92:37
+     90|     expect(g.chooseColor(1, 'blue').ok).toBe(true);
+     91|     expect(g.respondChallenge(3, true).ok).toBe(true);
+     92|     expect(g.state.lastEvent?.type).toBe('challenge_lose');
+       |                                     ^
+     93|     expect(g.state.hands.map(h => h.cards.length)).toEqual([2, 8, 2]);
+     94|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/14]⎯
+
+ FAIL  tests/ranked-seats.test.ts > 排名赛的在场座位 > 换手拒绝 self 目标且保留选择窗口
+ FAIL  tests/ranked-seats.test.ts > 排名赛的在场座位 > 换手拒绝 ranked 目标且保留选择窗口
+ FAIL  tests/ranked-seats.test.ts > 排名赛的在场座位 > 换手拒绝 eliminated 目标且保留选择窗口
+AssertionError: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ❯ tests/ranked-seats.test.ts:104:65
+    102|     g.play(1, [31]);
+    103|     const before = structuredClone(g.state);
+    104|     expect(g.chooseSwapTarget(1, target === 'self' ? 1 : 3).ok).toBe(f…
+       |                                                                 ^
+    105|     expect(g.state).toEqual(before);
+    106|     expect(g.chooseSwapTarget(1, 6).ok).toBe(true);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/14]⎯
+
+ FAIL  tests/ranked-seats.test.ts > 排名赛的在场座位 > novice 只从仍在场的其他玩家中选择换手对象
+ FAIL  tests/ranked-seats.test.ts > 排名赛的在场座位 > easy 只从仍在场的其他玩家中选择换手对象
+ FAIL  tests/ranked-seats.test.ts > 排名赛的在场座位 > normal 只从仍在场的其他玩家中选择换手对象
+ FAIL  tests/ranked-seats.test.ts > 排名赛的在场座位 > hard 只从仍在场的其他玩家中选择换手对象
+AssertionError: expected { type: 'swap_target', targetSeat: 3 } to deeply equal { type: 'swap_target', targetSeat: 6 }
+
+- Expected
++ Received
+
+  Object {
+-   "targetSeat": 6,
++   "targetSeat": 3,
+    "type": "swap_target",
+  }
+
+ ❯ tests/ranked-seats.test.ts:116:56
+    114|     g.state.hands[0].cards.push(number(31, 7));
+    115|     g.play(1, [31]);
+    116|     expect(decideBotAction(g, 1, difficulty, () => 0)).toEqual({ type:…
+       |                                                        ^
+    117|   });
+    118| 
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/14]⎯
+
+ FAIL  tests/ranked-seats.test.ts > 排名赛的在场座位 > 新一轮从仍在场的首位玩家开始，清除上一轮名次
+AssertionError: expected 1 to be 3 // Object.is equality
+
+- Expected
++ Received
+
+- 3
++ 1
+
+ ❯ tests/ranked-seats.test.ts:125:29
+    123|     g.startRound();
+    124|     expect(g.state.discard[0].kind).toBe('number');
+    125|     expect(g.state.current).toBe(3);
+       |                             ^
+    126|     expect(g.state.hands.map(h => h.cards.length)).toEqual([0, 7, 7]);
+    127|     expect(g.state.finishOrder).toEqual([]);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/14]⎯
+
+ Test Files  1 failed (1)
+      Tests  14 failed | 2 passed (16)
+   Start at  21:13:59
+   Duration  750ms (transform 302ms, setup 0ms, collect 362ms, tests 20ms, environment 0ms, prepare 90ms)
+

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#0f172a"/>
+  <g transform="rotate(-18 256 256)">
+    <rect x="156" y="106" width="200" height="300" rx="24" fill="#dc2626" stroke="#fff" stroke-width="14"/>
+    <ellipse cx="256" cy="256" rx="82" ry="118" fill="#fff" transform="rotate(-25 256 256)"/>
+    <text x="256" y="285" font-family="Arial Black, Arial" font-size="58" font-weight="900" fill="#dc2626" text-anchor="middle">UNO</text>
+  </g>
+</svg>

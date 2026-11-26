@@ -1,0 +1,14 @@
+{
+  "setup": "new staged export and empty npm cache",
+  "commands": [
+    "npm ci",
+    "npm start"
+  ],
+  "host": "loopback, ephemeral port",
+  "node": "v24.15.0",
+  "health": true,
+  "html": true,
+  "clientAsset": true,
+  "seconds": 41.8,
+  "withinThreeMinutes": true
+}

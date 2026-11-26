@@ -1,0 +1,25 @@
+
+ RUN  v2.1.9 /private/var/folders/m8/tgs61s_x64bf2rs9w1_q8w8w0000gn/T/tmp.VrwBQRwDh6/packages/shared
+
+ ✓ tests/ranked-seats.test.ts > 排名赛的在场座位 > 三人桌末张反转，逆序交给仍在场的人
+ ✓ tests/ranked-seats.test.ts > 排名赛的在场座位 > 已有人出完，留下的两人打反转依旧可再行动
+ ✓ tests/ranked-seats.test.ts > 排名赛的在场座位 > 按方向 1 轮转时，已出完的人保持空手
+ ✓ tests/ranked-seats.test.ts > 排名赛的在场座位 > 按方向 -1 轮转时，已出完的人保持空手
+ ✓ tests/ranked-seats.test.ts > 排名赛的在场座位 > 末张 7 先取得名次，下一位继续出牌
+ ✓ tests/ranked-seats.test.ts > 排名赛的在场座位 > 末张万能牌仍可分两步选色，交棒前保留上一张万能指定的颜色
+ ✓ tests/ranked-seats.test.ts > 排名赛的在场座位 > 末张 +4 选色后把质疑权交给下家
+ ✓ tests/ranked-seats.test.ts > 排名赛的在场座位 > 上张万能从红改绿，合法 +4 分步选色后的质疑仍按绿判罚
+ ✓ tests/ranked-seats.test.ts > 排名赛的在场座位 > 换手拒绝 self 目标且保留选择窗口
+ ✓ tests/ranked-seats.test.ts > 排名赛的在场座位 > 换手拒绝 ranked 目标且保留选择窗口
+ ✓ tests/ranked-seats.test.ts > 排名赛的在场座位 > 换手拒绝 eliminated 目标且保留选择窗口
+ ✓ tests/ranked-seats.test.ts > 排名赛的在场座位 > novice 只从仍在场的其他玩家中选择换手对象
+ ✓ tests/ranked-seats.test.ts > 排名赛的在场座位 > easy 只从仍在场的其他玩家中选择换手对象
+ ✓ tests/ranked-seats.test.ts > 排名赛的在场座位 > normal 只从仍在场的其他玩家中选择换手对象
+ ✓ tests/ranked-seats.test.ts > 排名赛的在场座位 > hard 只从仍在场的其他玩家中选择换手对象
+ ✓ tests/ranked-seats.test.ts > 排名赛的在场座位 > 新一轮从仍在场的首位玩家开始，清除上一轮名次
+
+ Test Files  1 passed (1)
+      Tests  16 passed (16)
+   Start at  21:14:01
+   Duration  923ms (transform 239ms, setup 0ms, collect 270ms, tests 7ms, environment 0ms, prepare 245ms)
+

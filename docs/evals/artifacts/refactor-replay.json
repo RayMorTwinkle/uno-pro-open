@@ -1,0 +1,1012 @@
+{
+  "node": "v24.15.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "maxActions": 2000,
+  "seats": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "difficulties": [
+    "novice",
+    "easy",
+    "normal",
+    "hard"
+  ],
+  "suites": [
+    {
+      "profile": "firstOut",
+      "rules": {
+        "finishAll": false
+      },
+      "completed": 64,
+      "total": 64,
+      "runs": [
+        {
+          "seed": 1,
+          "step": 35,
+          "ok": true
+        },
+        {
+          "seed": 2,
+          "step": 51,
+          "ok": true
+        },
+        {
+          "seed": 3,
+          "step": 37,
+          "ok": true
+        },
+        {
+          "seed": 4,
+          "step": 38,
+          "ok": true
+        },
+        {
+          "seed": 5,
+          "step": 61,
+          "ok": true
+        },
+        {
+          "seed": 6,
+          "step": 100,
+          "ok": true
+        },
+        {
+          "seed": 7,
+          "step": 60,
+          "ok": true
+        },
+        {
+          "seed": 8,
+          "step": 40,
+          "ok": true
+        },
+        {
+          "seed": 9,
+          "step": 38,
+          "ok": true
+        },
+        {
+          "seed": 10,
+          "step": 64,
+          "ok": true
+        },
+        {
+          "seed": 11,
+          "step": 100,
+          "ok": true
+        },
+        {
+          "seed": 12,
+          "step": 76,
+          "ok": true
+        },
+        {
+          "seed": 13,
+          "step": 35,
+          "ok": true
+        },
+        {
+          "seed": 14,
+          "step": 29,
+          "ok": true
+        },
+        {
+          "seed": 15,
+          "step": 55,
+          "ok": true
+        },
+        {
+          "seed": 16,
+          "step": 137,
+          "ok": true
+        },
+        {
+          "seed": 17,
+          "step": 25,
+          "ok": true
+        },
+        {
+          "seed": 18,
+          "step": 59,
+          "ok": true
+        },
+        {
+          "seed": 19,
+          "step": 37,
+          "ok": true
+        },
+        {
+          "seed": 20,
+          "step": 48,
+          "ok": true
+        },
+        {
+          "seed": 21,
+          "step": 46,
+          "ok": true
+        },
+        {
+          "seed": 22,
+          "step": 41,
+          "ok": true
+        },
+        {
+          "seed": 23,
+          "step": 32,
+          "ok": true
+        },
+        {
+          "seed": 24,
+          "step": 30,
+          "ok": true
+        },
+        {
+          "seed": 25,
+          "step": 69,
+          "ok": true
+        },
+        {
+          "seed": 26,
+          "step": 122,
+          "ok": true
+        },
+        {
+          "seed": 27,
+          "step": 27,
+          "ok": true
+        },
+        {
+          "seed": 28,
+          "step": 75,
+          "ok": true
+        },
+        {
+          "seed": 29,
+          "step": 42,
+          "ok": true
+        },
+        {
+          "seed": 30,
+          "step": 76,
+          "ok": true
+        },
+        {
+          "seed": 31,
+          "step": 41,
+          "ok": true
+        },
+        {
+          "seed": 32,
+          "step": 44,
+          "ok": true
+        },
+        {
+          "seed": 33,
+          "step": 35,
+          "ok": true
+        },
+        {
+          "seed": 34,
+          "step": 36,
+          "ok": true
+        },
+        {
+          "seed": 35,
+          "step": 30,
+          "ok": true
+        },
+        {
+          "seed": 36,
+          "step": 43,
+          "ok": true
+        },
+        {
+          "seed": 37,
+          "step": 97,
+          "ok": true
+        },
+        {
+          "seed": 38,
+          "step": 48,
+          "ok": true
+        },
+        {
+          "seed": 39,
+          "step": 23,
+          "ok": true
+        },
+        {
+          "seed": 40,
+          "step": 55,
+          "ok": true
+        },
+        {
+          "seed": 41,
+          "step": 28,
+          "ok": true
+        },
+        {
+          "seed": 42,
+          "step": 104,
+          "ok": true
+        },
+        {
+          "seed": 43,
+          "step": 48,
+          "ok": true
+        },
+        {
+          "seed": 44,
+          "step": 30,
+          "ok": true
+        },
+        {
+          "seed": 45,
+          "step": 61,
+          "ok": true
+        },
+        {
+          "seed": 46,
+          "step": 58,
+          "ok": true
+        },
+        {
+          "seed": 47,
+          "step": 41,
+          "ok": true
+        },
+        {
+          "seed": 48,
+          "step": 47,
+          "ok": true
+        },
+        {
+          "seed": 49,
+          "step": 86,
+          "ok": true
+        },
+        {
+          "seed": 50,
+          "step": 65,
+          "ok": true
+        },
+        {
+          "seed": 51,
+          "step": 49,
+          "ok": true
+        },
+        {
+          "seed": 52,
+          "step": 97,
+          "ok": true
+        },
+        {
+          "seed": 53,
+          "step": 37,
+          "ok": true
+        },
+        {
+          "seed": 54,
+          "step": 83,
+          "ok": true
+        },
+        {
+          "seed": 55,
+          "step": 82,
+          "ok": true
+        },
+        {
+          "seed": 56,
+          "step": 36,
+          "ok": true
+        },
+        {
+          "seed": 57,
+          "step": 44,
+          "ok": true
+        },
+        {
+          "seed": 58,
+          "step": 70,
+          "ok": true
+        },
+        {
+          "seed": 59,
+          "step": 37,
+          "ok": true
+        },
+        {
+          "seed": 60,
+          "step": 67,
+          "ok": true
+        },
+        {
+          "seed": 61,
+          "step": 40,
+          "ok": true
+        },
+        {
+          "seed": 62,
+          "step": 31,
+          "ok": true
+        },
+        {
+          "seed": 63,
+          "step": 66,
+          "ok": true
+        },
+        {
+          "seed": 64,
+          "step": 72,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "profile": "ranked",
+      "rules": {
+        "finishAll": true
+      },
+      "completed": 64,
+      "total": 64,
+      "runs": [
+        {
+          "seed": 1,
+          "step": 78,
+          "ok": true
+        },
+        {
+          "seed": 2,
+          "step": 61,
+          "ok": true
+        },
+        {
+          "seed": 3,
+          "step": 64,
+          "ok": true
+        },
+        {
+          "seed": 4,
+          "step": 92,
+          "ok": true
+        },
+        {
+          "seed": 5,
+          "step": 96,
+          "ok": true
+        },
+        {
+          "seed": 6,
+          "step": 247,
+          "ok": true
+        },
+        {
+          "seed": 7,
+          "step": 160,
+          "ok": true
+        },
+        {
+          "seed": 8,
+          "step": 49,
+          "ok": true
+        },
+        {
+          "seed": 9,
+          "step": 77,
+          "ok": true
+        },
+        {
+          "seed": 10,
+          "step": 102,
+          "ok": true
+        },
+        {
+          "seed": 11,
+          "step": 147,
+          "ok": true
+        },
+        {
+          "seed": 12,
+          "step": 164,
+          "ok": true
+        },
+        {
+          "seed": 13,
+          "step": 125,
+          "ok": true
+        },
+        {
+          "seed": 14,
+          "step": 74,
+          "ok": true
+        },
+        {
+          "seed": 15,
+          "step": 152,
+          "ok": true
+        },
+        {
+          "seed": 16,
+          "step": 183,
+          "ok": true
+        },
+        {
+          "seed": 17,
+          "step": 88,
+          "ok": true
+        },
+        {
+          "seed": 18,
+          "step": 98,
+          "ok": true
+        },
+        {
+          "seed": 19,
+          "step": 93,
+          "ok": true
+        },
+        {
+          "seed": 20,
+          "step": 114,
+          "ok": true
+        },
+        {
+          "seed": 21,
+          "step": 186,
+          "ok": true
+        },
+        {
+          "seed": 22,
+          "step": 74,
+          "ok": true
+        },
+        {
+          "seed": 23,
+          "step": 49,
+          "ok": true
+        },
+        {
+          "seed": 24,
+          "step": 88,
+          "ok": true
+        },
+        {
+          "seed": 25,
+          "step": 176,
+          "ok": true
+        },
+        {
+          "seed": 26,
+          "step": 309,
+          "ok": true
+        },
+        {
+          "seed": 27,
+          "step": 88,
+          "ok": true
+        },
+        {
+          "seed": 28,
+          "step": 115,
+          "ok": true
+        },
+        {
+          "seed": 29,
+          "step": 167,
+          "ok": true
+        },
+        {
+          "seed": 30,
+          "step": 106,
+          "ok": true
+        },
+        {
+          "seed": 31,
+          "step": 170,
+          "ok": true
+        },
+        {
+          "seed": 32,
+          "step": 83,
+          "ok": true
+        },
+        {
+          "seed": 33,
+          "step": 103,
+          "ok": true
+        },
+        {
+          "seed": 34,
+          "step": 164,
+          "ok": true
+        },
+        {
+          "seed": 35,
+          "step": 112,
+          "ok": true
+        },
+        {
+          "seed": 36,
+          "step": 75,
+          "ok": true
+        },
+        {
+          "seed": 37,
+          "step": 248,
+          "ok": true
+        },
+        {
+          "seed": 38,
+          "step": 89,
+          "ok": true
+        },
+        {
+          "seed": 39,
+          "step": 108,
+          "ok": true
+        },
+        {
+          "seed": 40,
+          "step": 84,
+          "ok": true
+        },
+        {
+          "seed": 41,
+          "step": 70,
+          "ok": true
+        },
+        {
+          "seed": 42,
+          "step": 173,
+          "ok": true
+        },
+        {
+          "seed": 43,
+          "step": 88,
+          "ok": true
+        },
+        {
+          "seed": 44,
+          "step": 109,
+          "ok": true
+        },
+        {
+          "seed": 45,
+          "step": 93,
+          "ok": true
+        },
+        {
+          "seed": 46,
+          "step": 111,
+          "ok": true
+        },
+        {
+          "seed": 47,
+          "step": 87,
+          "ok": true
+        },
+        {
+          "seed": 48,
+          "step": 130,
+          "ok": true
+        },
+        {
+          "seed": 49,
+          "step": 111,
+          "ok": true
+        },
+        {
+          "seed": 50,
+          "step": 96,
+          "ok": true
+        },
+        {
+          "seed": 51,
+          "step": 92,
+          "ok": true
+        },
+        {
+          "seed": 52,
+          "step": 109,
+          "ok": true
+        },
+        {
+          "seed": 53,
+          "step": 52,
+          "ok": true
+        },
+        {
+          "seed": 54,
+          "step": 157,
+          "ok": true
+        },
+        {
+          "seed": 55,
+          "step": 231,
+          "ok": true
+        },
+        {
+          "seed": 56,
+          "step": 160,
+          "ok": true
+        },
+        {
+          "seed": 57,
+          "step": 72,
+          "ok": true
+        },
+        {
+          "seed": 58,
+          "step": 116,
+          "ok": true
+        },
+        {
+          "seed": 59,
+          "step": 122,
+          "ok": true
+        },
+        {
+          "seed": 60,
+          "step": 89,
+          "ok": true
+        },
+        {
+          "seed": 61,
+          "step": 72,
+          "ok": true
+        },
+        {
+          "seed": 62,
+          "step": 123,
+          "ok": true
+        },
+        {
+          "seed": 63,
+          "step": 167,
+          "ok": true
+        },
+        {
+          "seed": 64,
+          "step": 120,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "profile": "ranked07",
+      "rules": {
+        "finishAll": true,
+        "zeroRotateHands": true,
+        "sevenSwapHands": true
+      },
+      "completed": 64,
+      "total": 64,
+      "runs": [
+        {
+          "seed": 1,
+          "step": 99,
+          "ok": true
+        },
+        {
+          "seed": 2,
+          "step": 191,
+          "ok": true
+        },
+        {
+          "seed": 3,
+          "step": 85,
+          "ok": true
+        },
+        {
+          "seed": 4,
+          "step": 65,
+          "ok": true
+        },
+        {
+          "seed": 5,
+          "step": 101,
+          "ok": true
+        },
+        {
+          "seed": 6,
+          "step": 153,
+          "ok": true
+        },
+        {
+          "seed": 7,
+          "step": 265,
+          "ok": true
+        },
+        {
+          "seed": 8,
+          "step": 150,
+          "ok": true
+        },
+        {
+          "seed": 9,
+          "step": 123,
+          "ok": true
+        },
+        {
+          "seed": 10,
+          "step": 146,
+          "ok": true
+        },
+        {
+          "seed": 11,
+          "step": 155,
+          "ok": true
+        },
+        {
+          "seed": 12,
+          "step": 82,
+          "ok": true
+        },
+        {
+          "seed": 13,
+          "step": 122,
+          "ok": true
+        },
+        {
+          "seed": 14,
+          "step": 91,
+          "ok": true
+        },
+        {
+          "seed": 15,
+          "step": 136,
+          "ok": true
+        },
+        {
+          "seed": 16,
+          "step": 97,
+          "ok": true
+        },
+        {
+          "seed": 17,
+          "step": 96,
+          "ok": true
+        },
+        {
+          "seed": 18,
+          "step": 104,
+          "ok": true
+        },
+        {
+          "seed": 19,
+          "step": 105,
+          "ok": true
+        },
+        {
+          "seed": 20,
+          "step": 133,
+          "ok": true
+        },
+        {
+          "seed": 21,
+          "step": 352,
+          "ok": true
+        },
+        {
+          "seed": 22,
+          "step": 132,
+          "ok": true
+        },
+        {
+          "seed": 23,
+          "step": 143,
+          "ok": true
+        },
+        {
+          "seed": 24,
+          "step": 117,
+          "ok": true
+        },
+        {
+          "seed": 25,
+          "step": 136,
+          "ok": true
+        },
+        {
+          "seed": 26,
+          "step": 131,
+          "ok": true
+        },
+        {
+          "seed": 27,
+          "step": 226,
+          "ok": true
+        },
+        {
+          "seed": 28,
+          "step": 73,
+          "ok": true
+        },
+        {
+          "seed": 29,
+          "step": 137,
+          "ok": true
+        },
+        {
+          "seed": 30,
+          "step": 117,
+          "ok": true
+        },
+        {
+          "seed": 31,
+          "step": 187,
+          "ok": true
+        },
+        {
+          "seed": 32,
+          "step": 180,
+          "ok": true
+        },
+        {
+          "seed": 33,
+          "step": 135,
+          "ok": true
+        },
+        {
+          "seed": 34,
+          "step": 60,
+          "ok": true
+        },
+        {
+          "seed": 35,
+          "step": 63,
+          "ok": true
+        },
+        {
+          "seed": 36,
+          "step": 110,
+          "ok": true
+        },
+        {
+          "seed": 37,
+          "step": 76,
+          "ok": true
+        },
+        {
+          "seed": 38,
+          "step": 125,
+          "ok": true
+        },
+        {
+          "seed": 39,
+          "step": 122,
+          "ok": true
+        },
+        {
+          "seed": 40,
+          "step": 191,
+          "ok": true
+        },
+        {
+          "seed": 41,
+          "step": 105,
+          "ok": true
+        },
+        {
+          "seed": 42,
+          "step": 125,
+          "ok": true
+        },
+        {
+          "seed": 43,
+          "step": 136,
+          "ok": true
+        },
+        {
+          "seed": 44,
+          "step": 139,
+          "ok": true
+        },
+        {
+          "seed": 45,
+          "step": 145,
+          "ok": true
+        },
+        {
+          "seed": 46,
+          "step": 122,
+          "ok": true
+        },
+        {
+          "seed": 47,
+          "step": 77,
+          "ok": true
+        },
+        {
+          "seed": 48,
+          "step": 111,
+          "ok": true
+        },
+        {
+          "seed": 49,
+          "step": 81,
+          "ok": true
+        },
+        {
+          "seed": 50,
+          "step": 102,
+          "ok": true
+        },
+        {
+          "seed": 51,
+          "step": 134,
+          "ok": true
+        },
+        {
+          "seed": 52,
+          "step": 115,
+          "ok": true
+        },
+        {
+          "seed": 53,
+          "step": 156,
+          "ok": true
+        },
+        {
+          "seed": 54,
+          "step": 79,
+          "ok": true
+        },
+        {
+          "seed": 55,
+          "step": 100,
+          "ok": true
+        },
+        {
+          "seed": 56,
+          "step": 92,
+          "ok": true
+        },
+        {
+          "seed": 57,
+          "step": 126,
+          "ok": true
+        },
+        {
+          "seed": 58,
+          "step": 137,
+          "ok": true
+        },
+        {
+          "seed": 59,
+          "step": 94,
+          "ok": true
+        },
+        {
+          "seed": 60,
+          "step": 157,
+          "ok": true
+        },
+        {
+          "seed": 61,
+          "step": 194,
+          "ok": true
+        },
+        {
+          "seed": 62,
+          "step": 170,
+          "ok": true
+        },
+        {
+          "seed": 63,
+          "step": 99,
+          "ok": true
+        },
+        {
+          "seed": 64,
+          "step": 233,
+          "ok": true
+        }
+      ]
+    }
+  ]
+}

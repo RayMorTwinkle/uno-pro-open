@@ -1,0 +1,31 @@
+{
+  "source_ref_before": "backup1126",
+  "source_commit_before": "aed7a753d8bb7c70e1ccf65824211b408476e581",
+  "source_branch_after": "refactor/1126",
+  "sha256_before": {
+    "package-lock.json": "0dec862557f141773080aa32f111192040afcb957dd0ea3ad8cb7f31ae85ddbf",
+    "packages/shared/src/engine.ts": "c6ed70bf894bda61bc3aa4a03da2bb0fc1934f5d37a0739c7f8f434a1b35e64d",
+    "packages/shared/src/types.ts": "1ccf86419af2f50ec9d6097bc6abea2efb1a6528f99e52ae9ba29560e03c7b6c",
+    "packages/shared/src/bot.ts": "a3b60898c6ebf9d3eec197ac2e2c4bf8925a6b3b23b518715dc9e610538afd0a",
+    "packages/shared/src/games/uno/runtime.ts": "5da95abba9f3dae437496510c065b134535094245c36b2f736203e11205d4b97"
+  },
+  "sha256_after": {
+    "package-lock.json": "0dec862557f141773080aa32f111192040afcb957dd0ea3ad8cb7f31ae85ddbf",
+    "packages/shared/src/engine.ts": "18791e0af3fce3f384566f456ef319e651a87991a31e3bb79c3ba950a916bdcf",
+    "packages/shared/src/types.ts": "0c94f0c0b310667659861f96003384853e3c22fdacade5990ad55eaecaaca3cc",
+    "packages/shared/src/bot.ts": "c23e913852f26c3d81b89cbd4a0e3f1e0a28bc8f3b3bb6e9d0844a4712c6b8b1",
+    "packages/shared/src/games/uno/runtime.ts": "57e8ab029f5c5b7b22a3fd77b374b7ca0584f8377f0d4a0a44f79798d4e28721"
+  },
+  "evaluation_sha256": {
+    "docs/evals/artifacts/replay-ranked.mts": "48415c30eb8ca34e529c3622a83ed10c0edfc68a09f0b4d02bc1261e517c9023",
+    "docs/evals/artifacts/run-ranked.sh": "0a845a77970dd1fb4ce64362983ded39ae2e5f8e39b1b1ed30bef09c6b6271b0",
+    "packages/shared/tests/ranked-seats.test.ts": "2160b13d521926ecf55c7edf815ee6a7d7c612eb3a02db7c35509a12b5700f65",
+    "packages/shared/tests/projection.test.ts": "fed816936f3ffb89440b98969061410aafe3526b2c00c78f6bc3a443f29899be",
+    "docs/evals/artifacts/run-projection.sh": "f338d7aeb95ff0ebb5d10c6c796da8e3eac902c6ab85ee97e1c2e89a3629160a"
+  },
+  "host": "Darwin arm64",
+  "node": "v24.15.0",
+  "npm": "11.12.1",
+  "vitest": "2.1.9",
+  "tsx": "4.23.15"
+}

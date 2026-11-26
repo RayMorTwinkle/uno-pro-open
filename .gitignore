@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.local/
+*.sqlite*
+*.log
+.DS_Store
+.env*
+!docs/evals/artifacts/*.log

@@ -1,0 +1,22 @@
+
+> uno-pro@0.1.0 test
+> npm run test --workspaces --if-present
+
+
+> @uno-pro/shared@0.1.0 test
+> vitest run
+
+
+ RUN  v2.1.9 /private/tmp/uno-rule-baseline.etWkeA/packages/shared
+
+ ✓ tests/galli.test.ts (7 tests) 3ms
+ ✓ tests/drawguess.test.ts (5 tests) 4ms
+ ✓ tests/nimmt.test.ts (12 tests) 5ms
+ ✓ tests/cheat.test.ts (13 tests) 5ms
+ ✓ tests/engine.test.ts (28 tests) 7ms
+
+ Test Files  5 passed (5)
+      Tests  65 passed (65)
+   Start at  21:10:25
+   Duration  388ms (transform 415ms, setup 0ms, collect 698ms, tests 25ms, environment 1ms, prepare 351ms)
+

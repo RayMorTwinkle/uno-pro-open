@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171e1b">
+  <meta name="description" content="UNO-PRO 中文开源桌游。选一张牌，重放逐名次赛里的座位变化，再在自己的局域网开一桌。">
+  <title>UNO-PRO · 今晚，开一桌。</title>
+  <link rel="stylesheet" href="showcase.css"><script src="showcase.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<header><div class="shell top"><a class="brand" href="#main" aria-label="UNO-PRO 首页"><i aria-hidden="true"></i> UNO<span>PRO</span></a>
+<nav aria-label="主导航"><a href="#lab">试一张牌</a><a href="#film">看短片</a><a class="nav-cta" href="#start">本地开桌 <b>↗</b></a></nav></div></header>
+<main id="main">
+<section class="hero"><div class="shell hero-grid"><div class="lead">
+<p class="eyebrow"><i></i> LOCAL MULTIPLAYER &nbsp;/&nbsp; 开源桌游</p>
+<h1>今晚，<br><em>开一桌。</em></h1>
+<p class="intro">一台电脑当桌主，朋友用手机入座。<br>人还没到齐，就让机器人先陪你打一局。</p>
+<div class="links"><a class="solid" href="#start">开始组局 <b>↗</b></a><a class="quiet" href="#lab">试试村规 <span>↓</span></a></div></div>
+<div class="poster" role="img" aria-label="绿七、黄色反转和红零三张牌悬在深绿色牌桌上">
+<div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div>
+<div class="deck"><div class="playing green"><small>7</small><strong>7</strong><small>7</small></div><div class="playing gold"><small>↺</small><strong>↺</strong><small>↺</small></div><div class="playing coral"><small>0</small><strong>0</strong><small>0</small></div></div>
+<div class="plate"><span>UNO–PRO</span><span>桌面牌谱 / 0 · 7 · ↺</span></div></div></div></section>
+<div class="lineup"><div class="shell lineup-row"><span>同桌游戏</span><b>UNO</b><b>牛头王</b><b>吹牛</b><b>你画我猜</b><b>铃儿响叮当</b></div></div>
+<section class="shell block" id="lab"><div class="heading"><div><p class="index">RULE LAB &nbsp;/&nbsp; 村规试牌台</p><h2>出完牌的人，还算在场吗？</h2></div><p>甲刚拿到第一名，乙和丙还在打。<br>切换一张牌，看手牌和回合怎么走。</p></div>
+<div class="lab"><div class="selector" role="group" aria-label="选择试牌场景">
+<button data-scenario="zero" aria-pressed="true"><i class="mini mred">0</i><span>轮转手牌</span></button>
+<button data-scenario="seven" aria-pressed="false"><i class="mini mgreen">7</i><span>指定换牌</span></button>
+<button data-scenario="reverse" aria-pressed="false"><i class="mini myellow">↺</i><span>反转方向</span></button></div>
+<div class="board" aria-live="polite"><div class="board-top"><span>逐名次赛 · 规则示意</span><span id="step-indicator">出牌前</span></div>
+<div class="seats" id="seats"></div>
+<div class="board-bottom"><div><h3 id="move-title"></h3><p id="move-desc"></p></div><button id="move" class="solid">打出这张牌 →</button></div></div></div>
+<noscript><p>启用 JavaScript 可操作试牌台。0 轮转和 7 换手只涉及仍在场的玩家，已出完者保留名次。</p></noscript></section>
+<section class="dark" id="film"><div class="shell block"><p class="eyebrow">SCREENING ROOM &nbsp;/&nbsp; 游戏短片</p><h2>牌桌亮起的时候</h2>
+<video controls playsinline preload="metadata" poster="media/promo-poster.jpg" aria-label="UNO-PRO 中文宣传片"><source src="media/promo.mp4" type="video/mp4">浏览器不支持视频播放。</video></div></section>
+<section class="shell block" id="start"><div class="heading"><div><p class="index">AT YOUR TABLE &nbsp;/&nbsp; 本地开桌</p><h2>用自己的电脑开个房间。</h2></div><p>在开源仓根目录运行。首次安装需要联网，<br>组局时让手机与桌主连接同一局域网。</p></div>
+<div class="start-grid"><div class="terminal"><div><span>TERMINAL</span><button id="copy">复制命令</button></div><pre><code id="commands">npm ci
+npm start</code></pre><p>Node.js 22.13 或更新版本</p></div>
+<ol class="steps"><li><b>桌主进入大厅</b><p>打开终端显示的本机地址，输入昵称并创建房间。</p></li><li><b>朋友入座</b><p>用手机打开终端显示的局域网地址，输入房间码。独自试玩可直接添加机器人。</p></li><li><b>把规矩说好</b><p>在 UNO 房间展开村规，设置叠牌、换手和罚摸张数，再开始游戏。</p></li></ol></div></section>
+<section class="evidence"><div class="shell block"><p class="index">ENGINEERING NOTES &nbsp;/&nbsp; 实验记录</p><h2>把有争议的回合留下来。</h2><p>同一组输入分别交给备份和重构版运行。核对席位、手牌与名次，也检查摸牌者、对手和观战者各自看到的内容。</p><table class="results"><caption>同种子四席对局 · 正常结算局数</caption><thead><tr><th>房间设置</th><th>备份</th><th>重构</th></tr></thead><tbody><tr><th>先出完即收桌</th><td>64 / 64</td><td>64 / 64</td></tr><tr><th>默认逐名次</th><td>59 / 64</td><td>64 / 64</td></tr><tr><th>逐名次 + 0 与 7 换手</th><td>6 / 64</td><td>64 / 64</td></tr></tbody></table><div class="e-links"><a href="evals/refactor-1126-report.md">读取评测报告 ↗</a><a href="evals/artifacts/projection-before.log">查看视角基线 ↗</a><a href="evals/artifacts/projection-after.log">对照重构输出 ↗</a></div></div></section>
+</main><footer><div class="shell"><b>UNO / PRO</b><span>RayMorTwinkle · 独立桌游工程</span><a href="#main">回到桌面 ↑</a></div></footer></body></html>

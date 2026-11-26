@@ -1,0 +1,19 @@
+{
+  "name": "uno-pro-open",
+  "private": true,
+  "version": "0.1.0",
+  "description": "UNO-PRO — 多人在线 UNO 卡牌游戏（Web, mobile-first）",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "npm run build && npm start -w @uno-pro/server",
+    "build": "npm run build -w @uno-pro/client",
+    "test": "npm test -w @uno-pro/shared && node --import tsx --test scripts/*.test.mjs",
+    "typecheck": "npm run typecheck -w @uno-pro/shared && npm run typecheck -w @uno-pro/server && tsc --noEmit -p packages/client"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}
